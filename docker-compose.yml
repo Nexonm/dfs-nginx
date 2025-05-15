@@ -1,0 +1,14 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - dfs_network
+
+
+networks:
+  dfs_network:
+    external: true
