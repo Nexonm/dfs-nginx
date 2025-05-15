@@ -14,7 +14,7 @@ Before deploying the nginx server, the other system components should be started
 ```bash unwrap:false
 git clone https://github.com/ClayMix-the-creator/dfs-db-backup
 cd dfs-db-backup
-docker-compose -f docker-compose-back.yml --env-file back.env up --build --force-recreate
+docker-compose -f docker-compose-back.yml --env-file back.env up --build --force-recreate -d
 ```
 2. Deploy the [dfs-metadata](https://github.com/Nexonm/dfs-metadata) with following commands:
 ```bash
